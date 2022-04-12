@@ -1,0 +1,213 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    <header>
+    <div class="header-content">
+    <h2>Explore The Farming</h2>
+    <div class="line"></div>
+    <h1>Explore the World of Farming</h1>
+    <a href="#" class="ctn">Learn More</a>
+    </div>
+    </header>
+<!-- //banner -->
+<!-------Events----->
+
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Programs</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="{{ url_for('static', filename='images/priscilla-du-preez-tGtWKDdicn4-unsplash.jpg') }}">
+                <h4>Everest Camp</h4>
+                <p> cnkdjnc cnkmalnl canlk nn n canslakcc nancaois nuoce niaanoc nninfcan hbkafkuji</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="{{ url_for('static', filename='images/scott-goodwill-CtRE4_4L7b8-unsplash.jpg') }}" alt="">
+                <h4>Halking Holidays</h4>
+                <p> cnkdjnc cnkmalnl canlk nnhbkafkuj cn canslakcc nancaois nuoce niaanoc nninfcan ccnono cnoikfhwow nonoaa i</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+<!--    About us-->
+
+    <section class="about">
+        <div class="content">
+            <img src="{{ url_for('static', filename='images/farmer_PNG63.png') }}">
+            <div class="text">
+                <h1>About Us</h1>
+                <h5>Developer and Designer</h5>
+                <p>nkjsncs mscs msso isiuibv cnscisn cunu jca cnini nc9c8wn wn9cn w9cw9cw9 nw9cnw9n9 neu jsn sinisno caocnncibsi o icnsincocn snssiuo oos nis nsi nsinsn aoc ccnnusi naoh ibishocijaoboh vbsooihsvsn</p>
+                <button type="button_btn">Read More</button>
+            </div>
+        </div>
+    </section>
+<!--Our services-->
+<section class="our">
+        <div class="heading">
+            <h2><span>Our</span> Services</h2>
+        </div>
+        <div class="container-box">
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <div class="box-content">
+                    <h3>Crop</h3>
+                    <p>nkjsncs mscs msso isiuibv cnscisn cunu jca cnini nc9c8wn wn9cn w9cw9cw9 nw9cnw9n9 neu jsn sinisno caocnncibsi o icnsincocn snssiuo oos nis nsi nsinsn aoc ccnnusi naoh</p>
+                    <a href="{{ url_for('crop_recommend') }}">Predict</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <div class="box-content">
+                    <h3>Fertilizer</h3>
+                    <p>nkjsncs mscs msso isiuibv cnscisn cunu jca cnini nc9c8wn wn9cn w9cw9cw9 nw9cnw9n9 neu jsn sinisno caocnncibsi o icnsincocn snssiuo oos nis nsi nsinsn aoc ccnnusi naoh</p>
+                    <a href="{{ url_for('fertilizer_recommendation') }}">Predict</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <div class="box-content">
+                    <h3>Disease</h3>
+                    <p>nkjsncs mscs msso isiuibv cnscisn cunu jca cnini nc9c8wn wn9cn w9cw9cw9 nw9cnw9n9 neu jsn sinisno caocnncibsi o icnsincocn snssiuo oos nis nsi nsinsn aoc ccnnusi naoh</p>
+                    <a href="{{ url_for('disease_prediction') }}">Predict</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Explore-->
+    <section class="explore">
+        <div class="explore-content">
+            <h1>Explore the World</h1>
+            <div class="line"></div>
+            <p>cnkdjnc cnkmalnl canlk nnhbkafkuj cn canslakcc nancaois nuoce niaanoc nninfcan ccnono cnoikfhwow nonoaa cnkdjnc cnkmalnl canlk nnhbkafkuj cn canslakcc nancaois nuoce n</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+<!--Tours-->
+<!--    <section class="tours">-->
+<!--        <div class="row">-->
+<!--            <div class="col content-col">-->
+<!--                <h1>Upcoming Tours and Destination</h1>-->
+<!--                <div class="line"></div>-->
+<!--                <p>nkjsncs mscs msso isiuibv cnscisn cunu jca cnini nc9c8wn wn9cn w9cw9cw9 nw9cnw9n9 neu jsn sinisno caocnncibsi o icnsincocn snssiuo oos nis nsi nsinsn aoc ccnnusi naoh ibishocijaoboh vbsooihsvsn </p>-->
+<!--                <a href="#" class="ctn">Learn More</a>-->
+<!--            </div>-->
+<!--            <div class="col image-col">-->
+<!--                <div class="image-gallery">-->
+<!--                    <img src="{{ url_for('static', filename='images/1.jpg') }}" alt="">-->
+<!--                    <img src="{{ url_for('static', filename='images/2.jpg') }}" alt="">-->
+<!--                    <img src="{{ url_for('static', filename='images/3.jpg') }}" alt="">-->
+<!--                    <img src="{{ url_for('static', filename='images/4.jpg') }}" alt="">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!-- core values -->
+
+<!--    Another design of Our team -->
+
+    <section class="team">
+        <div class="content-box">
+            <div class="container">
+                <h1>Our <em>Team</em></h1>
+                <div class="row services">
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='images/img/22654-6-man-thumb.png') }}" class="profile-image">
+                    </div>
+                    <h3>Web <span>Design</span></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i </p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='images/img/22654-6-man-thumb.png') }}" class="profile-image">
+                    </div>
+                    <h3>Web <span>Development</span></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i </p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='images/img/22654-6-man-thumb.png') }}" class="profile-image">
+                    </div>
+                    <h3>Web <span>Design</span></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i </p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <img src="{{ url_for('static', filename='images/img/22654-6-man-thumb.png') }}" class="profile-image">
+                    </div>
+                    <h3>Web <span>Design</span></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team">
+        <div class="content-box">
+            <div class="container">
+                <div class="row services">
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <img src="./img/22654-6-man-thumb.png" class="profile-image">
+                    </div>
+                    <h3>Web <span>Design</span></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i </p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <img src="./img/c dj kca.jpg" class="profile-image">
+                    </div>
+                    <h3>Web <span>Development</span></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i </p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <img src="./img/c dj kca.jpg" class="profile-image">
+                    </div>
+                    <h3>Web <span>Design</span></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i </p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="icon">
+                        <img src="./img/c dj kca.jpg" class="profile-image">
+                    </div>
+                    <h3>Web <span>Design</span></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- //core values -->
+
+<!-- Products & Services -->
+
+<!-- //Products & Services -->
+
+
+<!-- Creating custom grid and hover effect
+<section>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/s2.jpg" alt="">
+        <div class="overlay">
+           <h2>Hover effect 1</h2>
+           <a class="info" href="#">link here</a>
+        </div>
+    </div>
+</div> -->
+
+</html>
+
+{% endblock %}
